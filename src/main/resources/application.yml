@@ -1,0 +1,24 @@
+# 配置端口
+server:
+  port: 8080
+#  servlet:
+#    context-path: /
+# 静态文件请求匹配方式
+spring:
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 127.0.0.1:9200
+      repositories:
+        enable: true
+  kafka:
+    #kafka配置信息
+    bootstrap-servers: 127.0.0.1:9092
+
+#配置kafka的־topic
+logstash:
+  log:
+    topic: logstash_log
+logging:
+  level:
+    com.roylao: DEBUG
